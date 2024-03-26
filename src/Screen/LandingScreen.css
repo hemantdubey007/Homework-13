@@ -1,0 +1,72 @@
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+}
+
+#container>div{
+    height: 80vh;
+    overflow-y: scroll;
+    width: 45%;
+    padding: 1rem;
+    box-shadow: 0 0 2px 2px #c5c3c3;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scrollbar-width: none;
+}
+
+#container>div>h2{
+    margin-bottom: 1rem;
+}
+
+#team-list-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#team-list-container{
+    height: 90%;
+    overflow-y: scroll;
+    padding: 0 1rem;
+    scrollbar-width: none;
+}
+
+#sorting-btn{
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #600fe2;
+    color: #ffffff;
+}
+
+#average-age-card{
+    margin-top: 1rem;
+    box-shadow: 0 0 2px 2px #d3cece;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 868.5px) {
+    #container{
+        flex-direction: column;
+    }
+
+    #container>div{
+        width: 90%;
+    }
+}
